@@ -20,7 +20,7 @@ const successCallback = (position) => {
   if (sp === null) {
     sp = 0;
   }
-  content.innerHTML = "Speed: " + sp + " meters/sec";
+  content.innerHTML = "Speed: " + sp.toFixed(2) + " meters/sec";
 };
 
 const errorCallback = (error) => {
@@ -29,4 +29,8 @@ const errorCallback = (error) => {
 
 function stop() {
   navigator.geolocation.clearWatch(watchId);
+}
+
+function reset() {
+  window.location.reload();
 }

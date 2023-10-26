@@ -36,6 +36,10 @@ button {
   background-color: rgb(172, 3, 3);
 }
 
+#reset {
+  background-color: rgb(27, 4, 174);
+}
+
 #content {
   font-size: 1.5rem;
   margin-bottom: 1rem;
