@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: rgb(198, 224, 224);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  color: rgb(3, 114, 55);
+}
+
+button {
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 0.3rem;
+  margin: .8rem 0;
+  cursor: pointer;
+}
+
+#speed {
+  background-color: green;
+}
+
+#stop {
+  background-color: rgb(172, 3, 3);
+}
+
+#content {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}

@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Speed-O-Meter</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <script defer src="script.js"></script>
   </head>
   <body>
     <div class="container">
       <h1>Speed-O-Meter</h1>
-      <div id="content1"></div>
-      <div id="content2"></div>
-      <button id="speed" onclick="getLocation()">Measure</button>
+      <div id="content">Speed: 0 meters/sec</div>
+      <button id="speed" onclick="getLocation()">Start</button>
       <button id="stop" onclick="stop()">Stop</button>
     </div>
   </body>

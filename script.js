@@ -1,5 +1,4 @@
-const content1 = document.getElementById("content1");
-const content2 = document.getElementById("content2");
+const content = document.getElementById("content");
 
 var watchId;
 
@@ -17,8 +16,11 @@ const options = {
 };
 
 const successCallback = (position) => {
-  content1.innerHTML = "Speed: " + position.coords.speed;
-  content2.innerHTML = "Accuracy: " + position.coords.accuracy;
+  let sp = position.coords.speed;
+  if (sp === null) {
+    sp = 0;
+  }
+  content.innerHTML = "Speed: " + sp + " meters/sec";
 };
 
 const errorCallback = (error) => {
